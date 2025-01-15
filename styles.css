@@ -1,0 +1,94 @@
+:root{
+    --dark-blue: #001F3F;
+    --mid-blue: #3A6D8C;
+    --light-blue: #6A9AB0;
+    --coffee-colour: #EAD8B1;
+    --pink-colour: #FFCFEF;
+
+}
+
+@font-face {
+    font-family: 'mainCustom'; 
+    src: url('media/Mildhandjive-E0m4.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Custom2';
+    src: url('media/bonk-font/Bonk-DLa0.ttf') format('truetype');
+}
+
+body{
+    font-family: 'mainCustom', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: var(--coffee-colour);
+    background: linear-gradient(to right, var(--mid-blue), var(--light-blue), var(--mid-blue));
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--dark-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero h1{
+    background-image: linear-gradient(to right, var(--pink-colour), var(--mid-blue), var(--pink-colour)); 
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Custom2';
+    letter-spacing: 5px;
+    padding: 0px; 
+    margin: 0px;
+}
+
+#view{
+    font-family: 'mainCustom', Arial;
+    width: 150px;
+    height: 70px;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: var(--mid-blue);
+    color: var(--coffee-colour);
+    font-size: 21px;
+    
+}
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.details{
+    margin: 20px;
+    padding: 30px;
+    height: auto;
+    width: 50%;
+    border-color: var(--dark-blue);
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    padding: 10px;
+}
