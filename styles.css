@@ -70,6 +70,41 @@ body {
     color: var(--coffee-colour);
     font-size: 21px;
 }
+
+.footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+#email-button {
+    width: 80px;
+    height: 30px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: var(--mid-blue);
+    border-radius: 20px;
+    font-family: "mainCustom";
+    font-size: 15px;
+    color: var(--coffee-colour);
+}
+
+#email-button,
+#view {
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+#email-button:hover,
+#view:hover {
+    transform: scale(1.1);
+    background-color: var(--light-blue);
+}
+
 .info {
     display: flex;
     justify-content: center;
@@ -88,13 +123,4 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-.footer {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10px;
-    padding: 0px;
 }
