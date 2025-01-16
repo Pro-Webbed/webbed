@@ -1,37 +1,40 @@
-:root{
-    --dark-blue: #001F3F;
-    --mid-blue: #3A6D8C;
-    --light-blue: #6A9AB0;
-    --coffee-colour: #EAD8B1;
-    --pink-colour: #FFCFEF;
-
+:root {
+    --dark-blue: #001f3f;
+    --mid-blue: #3a6d8c;
+    --light-blue: #6a9ab0;
+    --coffee-colour: #ead8b1;
+    --pink-colour: #ffcfef;
 }
 
 @font-face {
-    font-family: 'mainCustom'; 
-    src: url('media/Mildhandjive-E0m4.ttf') format('truetype'); 
+    font-family: "mainCustom";
+    src: url("media/Mildhandjive-E0m4.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Custom2';
-    src: url('media/bonk-font/Bonk-DLa0.ttf') format('truetype');
+    font-family: "Custom2";
+    src: url("media/bonk-font/Bonk-DLa0.ttf") format("truetype");
 }
 
-body{
-    font-family: 'mainCustom', Arial, Helvetica, sans-serif;
+body {
+    font-family: "mainCustom", Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: var(--coffee-colour);
-    background: linear-gradient(to right, var(--mid-blue), var(--light-blue), var(--mid-blue));
-    height: 100%;
+    background: linear-gradient(
+        to right,
+        var(--mid-blue),
+        var(--light-blue),
+        var(--mid-blue)
+    );
     width: 100%;
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
-
+    overflow-x: hidden;
 }
 
-.hero{
+.hero {
     height: 100vh;
     width: 100%;
     background-color: var(--dark-blue);
@@ -40,20 +43,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-.hero h1{
-    background-image: linear-gradient(to right, var(--pink-colour), var(--mid-blue), var(--pink-colour)); 
+.hero h1 {
+    background-image: linear-gradient(
+        to right,
+        var(--pink-colour),
+        var(--mid-blue),
+        var(--pink-colour)
+    );
     -webkit-background-clip: text;
     color: transparent;
-    font-family: 'Custom2';
+    font-family: "Custom2";
     letter-spacing: 5px;
-    padding: 0px; 
+    padding: 0px;
     margin: 0px;
 }
 
-#view{
-    font-family: 'mainCustom', Arial;
+#view {
+    font-family: "mainCustom", Arial;
     width: 150px;
     height: 70px;
     border-color: transparent;
@@ -62,14 +69,13 @@ body{
     background-color: var(--mid-blue);
     color: var(--coffee-colour);
     font-size: 21px;
-    
 }
-.info{
+.info {
     display: flex;
     justify-content: center;
 }
 
-.details{
+.details {
     margin: 20px;
     padding: 30px;
     height: auto;
@@ -84,11 +90,11 @@ body{
     text-align: center;
 }
 
-.footer{
+.footer {
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: 0;
-    margin: 10px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
 }
