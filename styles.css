@@ -73,23 +73,28 @@ body {
 
 .stages{
     display: flex;
-    justify-content: center;
+    
 }
 
 table {
-    width: 70%;
+    width: 50%;
+    height: 20px;
     border-collapse: separate;
     border-spacing: 0;
-    margin: 20px 0;
+    margin: 20px;
     border: 2px solid;
     border-radius: 15px;
     background-color: var(--mid-blue);
     
 }
 
-@media screen and (max-width: 480px) {  
+@media screen and (max-width: 500px) {  
+    .stages{
+        justify-content: center;
+    }
     table {
-        width: 480px; 
+        width: 100vh;
+        transform: scale(0.87);
     }
 }
 
@@ -98,7 +103,6 @@ tr, td, th {
     border: 2px solid;
     
     width: 20%;
-    height: 60px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
