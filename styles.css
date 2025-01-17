@@ -87,6 +87,12 @@ table {
     
 }
 
+@media screen and (max-width: 480px) {  
+    table {
+        width: 480px; 
+    }
+}
+
 tr, td, th {
     text-align: center;
     border: 2px solid;
