@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: "mainCustom";
-    src: url("media/Mildhandjive-E0m4.ttf") format("truetype");
+    src: url("media/lumire/Lumierepolis-Yqvn8.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Custom2";
-    src: url("media/bonk-font/Bonk-DLa0.ttf") format("truetype");
+    src: url("media/cramaten-font/Cramaten-9YKGZ.ttf") format("truetype");
 }
 
 body {
@@ -47,9 +47,9 @@ body {
 .hero h1 {
     background-image: linear-gradient(
         to right,
-        var(--pink-colour),
+        var(--light-blue),
         var(--mid-blue),
-        var(--pink-colour)
+        var(--light-blue)
     );
     -webkit-background-clip: text;
     color: transparent;
