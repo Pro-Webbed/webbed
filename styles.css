@@ -96,7 +96,6 @@ body {
     font-family: 'Webbed';
     background-image: url('media/rainbowGradient.png');
     -webkit-background-clip: text;
-    background-clip: inherit;
     -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     color: transparent;
