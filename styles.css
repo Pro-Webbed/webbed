@@ -27,20 +27,18 @@
     src: url("media/SupremeSpike-KVO8D.otf") format("opentype");
 }
 
-@media screen and (max-width: 500px) {  
+@media screen and (max-width: 873px) {  
     .hero{
         display: flex;
         justify-content: center;
     }
     .bg-img{
-       height: 100vh;
-       margin: 0px;
-       overflow-x: hidden;
-       object-fit: cover;
+        
     }
     .stages{
         margin: 10px;
     }
+    
     table {
         width: 500px;
         transform: scale(0.85);
@@ -64,10 +62,14 @@ body {
 }
 
 .bg-img{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: -1;
     opacity: 0.6;
+    object-fit: cover;
+    overflow-x: hidden;
+    margin: 0px;
 }
 
 .hero {
@@ -84,8 +86,6 @@ body {
 
 .hero h1 {
     color: white;
-    
-    
     padding: 0px;
     margin: 0px;
     font-size: 32px;
@@ -96,6 +96,7 @@ body {
     font-family: 'Webbed';
     background-image: url('media/rainbowGradient.png');
     -webkit-background-clip: text;
+    background-clip: inherit;
     -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     color: transparent;
