@@ -46,7 +46,7 @@
         transform: scale(0.85);
     }
     tr, td, th {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
@@ -78,7 +78,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px;
+    margin: 0px; 
 
 }
 
@@ -99,7 +99,6 @@ body {
     -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     color: transparent;
-    margin-left: 6px;
 }
 
 #view {
@@ -229,3 +228,4 @@ tr:last-child td:last-child {
     justify-content: center;
     text-align: center;
 }
+
