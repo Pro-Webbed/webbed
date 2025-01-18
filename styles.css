@@ -1,9 +1,10 @@
 :root {
-    --dark-blue: #001f3f;
-    --mid-blue: #3a6d8c;
-    --light-blue: #6a9ab0;
-    --coffee-colour: #ead8b1;
+    --clr-black: #202020;
+    --clr-white: #e6e6e6;
+    --clr-grey: #afafaf;
+    --coffee-colour: #afafaf;
     --pink-colour: #ffcfef;
+    --clr-green: #00c600;
 }
 
 @font-face {
@@ -21,16 +22,39 @@
     src: url("media/SunnySpellsBasicRegular-Yz1Wv.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Webbed";
+    src: url("media/SupremeSpike-KVO8D.otf") format("opentype");
+}
+
+@media screen and (max-width: 500px) {  
+    .hero{
+        display: flex;
+        justify-content: center;
+    }
+    .bg-img{
+       height: 100vh;
+       margin: 0px;
+       overflow-x: hidden;
+       object-fit: cover;
+    }
+    .stages{
+        margin: 10px;
+    }
+    table {
+        width: 500px;
+        transform: scale(0.85);
+    }
+    tr, td, th {
+        font-size: 17px;
+    }
+}
+
 body {
     font-family: "mainCustom", Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: var(--coffee-colour);
-    background: linear-gradient(
-        to right,
-        var(--mid-blue),
-        var(--light-blue),
-        var(--mid-blue)
-    );
+    background-color: var(--clr-black);
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -39,29 +63,42 @@ body {
     overflow-x: hidden;
 }
 
+.bg-img{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.6;
+}
+
 .hero {
     height: 100vh;
     width: 100%;
-    background-color: var(--dark-blue);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px;
+
 }
+
 .hero h1 {
-    background-image: linear-gradient(
-        to right,
-        var(--light-blue),
-        var(--mid-blue),
-        var(--light-blue)
-    );
-    -webkit-background-clip: text;
-    color: transparent;
-    font-family: "Custom2";
-    letter-spacing: 5px;
+    color: white;
+    
+    
     padding: 0px;
     margin: 0px;
+    font-size: 32px;
+}
+
+#webbed{
+    font-size: 52px;
+    font-family: 'Webbed';
+    background-image: url('media/rainbowGradient.png');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    color: transparent;
 }
 
 #view {
@@ -71,9 +108,18 @@ body {
     border-color: transparent;
     border-style: solid;
     border-radius: 30px;
-    background-color: var(--mid-blue);
-    color: var(--coffee-colour);
+    color: var(--clr-black);
+    background-color: var(--clr-white);
     font-size: 21px;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.2s ease ;
+}
+
+#view:hover{
+    transform: scale(1.1);
+    color: var(--clr-white);
+    background-color: transparent;
+    border-color: var(--clr-white);
+
 }
 
 .stages{
@@ -81,6 +127,8 @@ body {
     font-family: 'Custom3';
     letter-spacing: 3px;
     font-size: 22px;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -96,20 +144,7 @@ table {
     
 }
 
-@media screen and (max-width: 500px) {  
-    .stages{
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-    }
-    table {
-        width: 500px;
-        transform: scale(0.85);
-    }
-    tr, td, th {
-        font-size: 17px;
-    }
-}
+
 
 tr, td, th {
     
@@ -135,7 +170,7 @@ tr:last-child td:last-child {
 
 
 .yes{
-    color: #00c600;
+    color: var(--clr-green);
 }
 
 .no{
@@ -162,16 +197,14 @@ tr:last-child td:last-child {
     color: var(--coffee-colour);
 }
 
-#email-button,
-#view {
+#email-button{
     transition:
         transform 0.2s ease,
         background-color 0.2s ease;
     }
     
     
-#email-button:hover,
-#view:hover {
+#email-button:hover{
     transform: scale(1.1);
     background-color: var(--light-blue);
 }
