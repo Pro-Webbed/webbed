@@ -46,7 +46,7 @@
         transform: scale(0.85);
     }
     tr, td, th {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
@@ -78,7 +78,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px; 
+    margin: 0px;
 
 }
 
@@ -229,4 +229,3 @@ tr:last-child td:last-child {
     justify-content: center;
     text-align: center;
 }
-
