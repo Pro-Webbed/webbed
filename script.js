@@ -1,5 +1,5 @@
-function scrollToSection() {
-    document.getElementById('our-work').scrollIntoView({
+function scrollToSection(a) {
+    document.getElementById(a).scrollIntoView({
       behavior: 'smooth'
     });
   }
