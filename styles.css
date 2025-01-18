@@ -212,19 +212,16 @@ tr:last-child td:last-child {
     border-radius: 20px;
     font-family: "mainCustom";
     font-size: 17px;
-    color: var(--coffee-colour);
-}
-
-#email-button{
-    transition:
-        transform 0.2s ease,
-        background-color 0.2s ease;
-    }
-    
-    
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+    transition: all 0.2s ease;
+}    
+       
 #email-button:hover{
+    color: var(--clr-white);
     transform: scale(1.1);
-    background-color: var(--light-blue);
+    background-color: transparent;
+    border-color: var(--clr-white);
 }
 
 
