@@ -27,22 +27,33 @@
     src: url("media/SupremeSpike-KVO8D.otf") format("opentype");
 }
 
-@media screen and (max-width: 873px) {  
+@media screen and (max-width: 500px) {  
     .hero{
         display: flex;
         justify-content: center;
     }
     .stages{
-        margin: 10px;
-    }
-    
-    table {
-        width: 500px;
-        transform: scale(0.85);
+        margin: 0px;
+        width: 100%;
     }
     tr, td, th {
+        letter-spacing: normal;
         font-size: 17px;
     }
+    table {
+        width: 100%;
+        
+    }
+    #our-work{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .mockup{
+        width: 50vw;
+    }
+
+    
 }
 
 body {
@@ -140,6 +151,46 @@ body {
     text-align: center;
 }
 
+#our-work{
+    padding: 30px;
+    
+}
+
+.templates-container{
+    width: 33vw;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mockup{
+    width:33vw;
+    height: 33vh;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0;
+}
+
+.open-iframe{
+    background-color: var(--clr-white);
+    border-style: solid;
+    border-radius: 15px;
+    border-color: transparent;
+    transition: all 0.2s;
+    font-family: "mainCustom", Arial;
+
+}
+
+.open-iframe:hover{
+    border-color: var(--clr-white);
+    color: var(--clr-white);
+    background-color:transparent;
+    transform: scale(1.1);
+}
+
 .stages{
     display: flex;
     font-family: 'Custom3';
@@ -193,14 +244,6 @@ tr:last-child td:last-child {
 
 .no{
     color: red;
-}
-
-.footer {
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    margin-bottom: 20px;
-    padding: 0px;
 }
 
 #email-button {
